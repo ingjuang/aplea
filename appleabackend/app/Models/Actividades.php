@@ -3,7 +3,7 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-class Actividad extends Model
+class Actividades extends Model
 {
 
     /**
@@ -12,7 +12,7 @@ class Actividad extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'nombre', 'descripcion', 'fechaInicio', 'fechaFin', 'alto', 'ancho', 'largo', 'unidadMedida', 'encargado'
+        'id', 'nombre', 'descripcion', 'fecha_inicio', 'fecha_fin', 'alto', 'ancho', 'largo', 'unidad_medida', 'id_encargado'
     ];
 
     /**

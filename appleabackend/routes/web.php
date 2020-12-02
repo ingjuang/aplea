@@ -16,3 +16,24 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/tipos_empleados',[
+    'uses' => 'TipoEmpleadoController@index'
+]);
+
+$router->get('/unidades_medida',[
+    'uses' => 'UnidadesMedidaController@index'
+]);
+
+$router->post('/actividad',[
+    'uses' => 'ActividadController@store'
+]);
+
+$router->post('/empleado',[
+    'uses' => 'EmpleadoController@store'
+]);
+
+$router->post('/empleado_actividad',[
+    'uses' => 'ActividadEmpleadoController@store'
+]);
+

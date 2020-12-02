@@ -3,7 +3,7 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-class Empleado extends Model
+class EmpleadosActividades extends Model
 {
 
     /**
@@ -12,7 +12,7 @@ class Empleado extends Model
      * @var array
      */
     protected $fillable = [
-        'id','nombres', 'apellidos', 'numIden', 'tipoIden', 'fechaNac', 'correo', 'telefono', 'tipoEmpleado', 'fotoPerfil'
+        'id', 'id_empleado', 'id_actividad'
     ];
 
     /**
@@ -21,6 +21,6 @@ class Empleado extends Model
      * @var array
      */
     protected $hidden = [
-        'create_at','updated_at'
+        'create_at','updated_at',
     ];
 }
